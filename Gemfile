@@ -44,6 +44,7 @@ group :development do
   gem 'spring'
   # Guard enables livereload on the browser and many other things 
   gem 'guard'
+  gem 'guard-livereload', require: false
 end
 
 group :test do
@@ -57,4 +58,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# TailwindCSS to facilitate css styling
 gem "tailwindcss-rails", "~> 0.4.3"
+
+# Font Awesome to have some icons
+gem "font-awesome-rails"
+
+gem 'rubocop', require: false
