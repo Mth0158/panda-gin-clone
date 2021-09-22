@@ -1,17 +1,22 @@
 <nav 
-  class="mt-16 flex justify-around items-center"
   data-controller="dropdown"
+  class="mt-16 flex justify-between items-center"
+>
+  <div
+    style="max-width: 40px;"  
   >
-  <i 
-    class="fa fa-bars fa-2x p-2 cursor-pointer"
-    data-action="click->dropdown#toggle click@window->dropdown#hide"
-    data-dropdown-target="dropdownButton"
-    ></i>
+    <i 
+      class="fa fa-bars p-2 ml-4 cursor-pointer"
+      style="font-size: 40px;"
+      data-action="click->dropdown#toggle"
+      data-dropdown-target="dropdownButton"
+      ></i>
+  </div>
   <div class="flex flex-col items-center">
     <h1 class="text-3xl">Panda</h1>
     <h2 class="text-xs">Organic gin</h2>
   </div>
-  <div>
+  <div class="mr-4">
     <i class="fa fa-user fa-lg p-2"></i>
     <i class="fa fa-shopping-bag fa-lg p-2"></i>
   </div>
