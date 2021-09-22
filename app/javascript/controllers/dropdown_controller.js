@@ -11,14 +11,12 @@ export default class extends Controller {
   }
 
   toggle() {
-    console.log(this.dropdownMenuTarget.classList);
-    this.dropdownMenuTarget.classList.toggle("hidden");
-  }
-
-  hide(event) {
-    if (event && this.dropdownMenuTarget.contains(event.target)) {
-      return;
+    if (this.dropdownButtonTarget.classList.contains("fa-bars")) {
+      this.dropdownButtonTarget.classList.remove("fa-bars");
+      this.dropdownButtonTarget.classList.add("fa-minus");
+    } else {
+      this.dropdownButtonTarget.classList.remove("fa-minus");
+      this.dropdownButtonTarget.classList.add("fa-bars");
     }
-    this.dropdownMenuTarget.classList.add("hidden");
   }
 }
