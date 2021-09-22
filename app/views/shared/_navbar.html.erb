@@ -1,5 +1,12 @@
-<nav class="mt-16 flex justify-around items-center">
-  <i class="fa fa-bars fa-2x"></i>
+<nav 
+  class="mt-16 flex justify-around items-center"
+  data-controller="dropdown"
+  >
+  <i 
+    class="fa fa-bars fa-2x p-2 cursor-pointer"
+    data-action="click->dropdown#toggle click@window->dropdown#hide"
+    data-dropdown-target="dropdownButton"
+    ></i>
   <div class="flex flex-col items-center">
     <h1 class="text-3xl">Panda</h1>
     <h2 class="text-xs">Organic gin</h2>
